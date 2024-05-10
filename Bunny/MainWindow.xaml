@@ -17,8 +17,8 @@
         </Grid.ColumnDefinitions>
 
         <Grid Grid.ColumnSpan="2" Background="#0F0F2D"
-            MouseDown="Grid_MouseDown"
-            >
+              MouseDown="Grid_MouseDown"
+              >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -35,31 +35,30 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <TextBlock Text="BunnyCo"
-                    Foreground="White"
-                    Grid.Column="1"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    />
-            <TextBlock Text="Menu"
-                    Foreground="LightGray"
-                    Grid.Column="2"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    />
-            <TextBlock Text="Website"
-                    Foreground="LightGray"
-                    Grid.Column="3"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    />
-            <Button
-                Grid.Column="12"
-                Grid.ColumnSpan="2"
-                Height="25"
-                Width="75"
-Content="Start"  
-Foreground="White">
+            <TextBlock Text="BunnyCo" 
+                       Foreground="White"
+                       Grid.Column="1"
+                       HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                       />
+            <TextBlock Text="Menu" 
+                       Foreground="LightGray"
+                       Grid.Column="2"
+                       HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                       />
+            <TextBlock Text="Website" 
+                       Foreground="LightGray"
+                       Grid.Column="3"
+                       HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                       />
+            <Button 
+            Grid.Column="12"
+            Grid.ColumnSpan="2"
+            FontSize="10"
+            Content="Start"   
+            Foreground="White">
 
                 <Button.Style>
                     <Style TargetType="Button">
@@ -75,14 +74,14 @@ Foreground="White">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border
-               Width="75"
-               Height="15"
-               CornerRadius="13"
-               Background="{TemplateBinding Background}"
-               >
+                           Width="75"
+                           Height="15"
+                           CornerRadius="7"
+                           Background="{TemplateBinding Background}"
+                           >
                             <ContentPresenter
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center">
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center">
 
                             </ContentPresenter>
                         </Border>
@@ -90,49 +89,54 @@ Foreground="White">
                 </Button.Template>
 
             </Button>
-
         </Grid>
-        <StackPanel Grid.Row="1" VerticalAlignment="Center" Margin="60">
-            <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 20">
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" Margin="60,0,0,0">
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
                 <Image Width="50" Height="50"
-                Source="Assets/shuttle.png"/>
-                <TextBlock
-                Text="BunnyCo"
-                Foreground="White"
-                VerticalAlignment="Center"
-                FontSize="22"/>
+                 Source="
+                       Assets/shuttle.png"/>
+                <TextBlock 
+                    Margin="10,0,0,0"
+                    Text="BunnyCo" 
+                    Foreground="White"
+                    VerticalAlignment="Center"
+                    FontSize="22"/>
             </StackPanel>
 
             <StackPanel>
 
                 <TextBlock
-            Foreground="White"
-            FontSize="26"
-            FontWeight="Medium"                    
-            Text="Customize" />
+                Foreground="White"
+                FontSize="26"
+                FontWeight="Medium"                    
+                Text="Customize" 
+                
+                    />
                 <TextBlock
-            Foreground="White"
-            FontSize="26"
-            FontWeight="Medium"                    
-            Text="Your" />
+                Foreground="White"
+                FontSize="26"
+                FontWeight="Medium"                    
+                Text="Your" />
                 <TextBlock
-            Foreground="White"
-            FontSize="26"
-            FontWeight="Medium"   Margin="0, 0, 0, 20"                 
-            Text="Experience" />
+                Foreground="White"
+                FontSize="26"
+                FontWeight="Medium"                    
+                Text="Experience" />
 
                 <TextBlock Foreground="White"
-            FontSize="14"
-            FontWeight="Medium"  
-            TextWrapping="Wrap" Margin="0, 0, 0, 20"
-            Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the " />
+                FontSize="14"
+                Margin="0,20"
+                FontWeight="Medium"  
+                TextWrapping="Wrap"
+                Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the " />
 
             </StackPanel>
 
             <StackPanel Orientation="Horizontal">
-                <Button
-              Content="Start"  
-              Foreground="White">
+
+                <Button 
+                 Content="Start"   
+                 Foreground="White">
 
                     <Button.Style>
                         <Style TargetType="Button">
@@ -148,25 +152,26 @@ Foreground="White">
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
                             <Border
-                             Width="100"
-                             Height="25"
-                             CornerRadius="15"
-                             Background="{TemplateBinding Background}"
-                             >
+                                Width="100"
+                                Height="25"
+                                CornerRadius="15"
+                                Background="{TemplateBinding Background}"
+                                >
                                 <ContentPresenter
-                                 VerticalAlignment="Center"
-                                 HorizontalAlignment="Center">
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
 
                                 </ContentPresenter>
                             </Border>
                         </ControlTemplate>
                     </Button.Template>
 
-                </Button>                
-                
-                <Button
-                Content="Register"  
-                Foreground="White" Margin="15, 0, 0, 0">
+                </Button>
+
+                <Button 
+                  Margin="15,0,0,0"
+                 Content="Register"   
+                 Foreground="White">
 
                     <Button.Style>
                         <Style TargetType="Button">
@@ -182,14 +187,14 @@ Foreground="White">
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
                             <Border
-                            Width="100"
-                            Height="25"
-                            CornerRadius="15"
-                            Background="{TemplateBinding Background}"
-                            >
+                                Width="100"
+                                Height="25"
+                                CornerRadius="15"
+                                Background="{TemplateBinding Background}"
+                                >
                                 <ContentPresenter
-                                VerticalAlignment="Center"
-                                HorizontalAlignment="Center">
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
 
                                 </ContentPresenter>
                             </Border>
@@ -197,14 +202,65 @@ Foreground="White">
                     </Button.Template>
 
                 </Button>
+
             </StackPanel>
         </StackPanel>
-        <StackPanel>
-            <StackPanel>
-                <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1" Grid.Row="1" Height="30" Background="#3DDDC2" CornerRadius="15" Margin="0,225,0,220"/>
-                <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1" Grid.Row="1" Height="30" Background="#FC6586" CornerRadius="15" Margin="0,135,0,310"/>
-                <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1" Grid.Row="1" Height="30" Background="#383660" CornerRadius="15" Margin="0,35,0,410"/>
+
+        <Grid
+            Grid.Row="1"
+            Grid.Column="1"
+            Margin="-450,-700,-700,-200"
+            Panel.ZIndex="-1"
+            >
+            <Grid.RenderTransform>
+                <RotateTransform Angle="50"/>
+            </Grid.RenderTransform>
+
+            <StackPanel Orientation="Horizontal">
+                <StackPanel>
+                    <Border
+                        Background="#3DDDC2"
+                        Width="1000"
+                        Height="35"
+                        CornerRadius="15"
+                        Margin="0,0,200,0"/>
+                    <Border
+                        Background="#FC6586"
+                        Width="1000"
+                        Height="35"
+                        CornerRadius="15"
+                        Margin="-70,15"/>
+                    <Border
+                        Background="#383660"
+                        Width="1000"
+                        Height="35"
+                        CornerRadius="15"
+                         Margin="-150,0,0,0"/>
+                </StackPanel>
+                <StackPanel>
+                    <Border
+                        Background="#3DDDC2"
+                        Width="1000"
+                        Height="35"
+                        CornerRadius="15"
+                        Margin="0,0,200,0"/>
+                    <Border
+                        Background="#FC6586"
+                        Width="1000"
+                        Height="35"
+                        CornerRadius="15"
+                        Margin="-70,15"/>
+                    <Border
+                        Background="#383660"
+                        Width="1000"
+                        Height="35"
+                        CornerRadius="15"
+                         Margin="-150,0,0,0"/>
+                </StackPanel>
+
             </StackPanel>
-        </StackPanel>
+        </Grid>
+
+
     </Grid>
 </Window>
